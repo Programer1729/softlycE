@@ -1,0 +1,245 @@
+*{
+    box-sizing: border-box;
+} 
+  body{
+    margin:0;
+    
+  }
+  nav {
+    max-width: 100%;
+    /* The mask-image gives us some extra fading. It is not necessary but without this, you can't face out the box-shadows. This clips our menu */
+    mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+    /* Using padding instead of margin for the top and bottom here will keep our box-shadow visible and not affected by the mask-image */
+    padding: 0 0; 
+    top: 0; 
+    position: absolute; 
+    right: 5%; 
+    z-index: 10;
+  }
+  
+  nav ul {
+    text-align: right;
+    
+    width: 100%; 
+    padding-right: 30px;    
+  }
+  
+  nav ul li {
+    display: inline-block;
+  }
+  
+  nav ul li a {
+    padding: 10px 20px; 
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  nav ul li a:hover {
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.1);
+    color: black;
+  } 
+
+  body{
+    margin:0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:1rem;
+    font-weight:normal;
+    line-height:1.5;
+    color:#333;
+    overflow-x:hidden;
+  }
+  
+  .v-header{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    color:#fff;
+  }
+  
+  .container{
+    max-width:960px;
+    padding-left:1rem;
+    padding-right:1rem;
+    margin:auto;
+    text-align:center;
+  }
+  
+  .fullscreen-video-wrap{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+  }
+  
+  .fullscreen-video-wrap video{
+    min-height:100%;
+    min-width:100%;
+  }
+  
+  .header-overlay{
+    height:100vh;
+    position: absolute;
+    top:0;
+    left:0;
+    width:100vw;
+    z-index:1;
+    background:#636f75;
+    opacity:0.80;
+  }
+  
+  .header-content{
+    z-index:2; 
+    
+  }
+  
+  .header-content h1{
+    font-size:50px;
+    margin-bottom:0; 
+  }
+  
+  .header-content p{
+    font-size:1.5rem;
+    display:block;
+    padding-bottom:2rem;
+  }
+  
+  .btn{
+    background: rgb(82, 77, 77);
+    color:#fff;
+    font-size:1rem;
+    padding: 1rem 2rem;
+    text-decoration: none; 
+    padding: 13px 40px;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.25); 
+    cursor: pointer; 
+    text-transform: uppercase; 
+    font-weight: bold;
+  }
+  
+  .section{
+    padding:0;
+  }
+  
+  .section-b{
+    background:#333;
+    color:#fff; 
+    height: 100vh; 
+    position: relative;
+  } 
+
+  #logo{
+    position: absolute; 
+    top: 0%; 
+    left: 0%; 
+    z-index: 15;   
+    display: flex;
+  } 
+
+  #logo i{
+    font-size: 3rem; 
+    margin: 20px; 
+    color: white; 
+    font-weight: 700;
+  } 
+
+  #logo p{
+    color: white; 
+    font-size: 30px; 
+    font-weight: 500;
+    margin: 20px 0;
+  } 
+
+  .subtitle{
+    line-height: 0.8;  
+    margin: 5% 5%;
+  } 
+
+  .subtitle h2{
+    font-size: 2rem; 
+    font-weight: bold;
+  } 
+
+  .subtitle p{
+    font-size: 1.2rem; 
+    line-height: 1.5;
+  } 
+
+  .card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;  
+    text-align: center;
+    padding-top: 15px; 
+    margin: 0 15px;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  } 
+
+  .content{
+    display: flex; 
+    justify-content: space-between;
+    margin: 5%;
+  } 
+
+  .mision{
+    display: flex;  
+    position: absolute;
+    top:10%;
+  } 
+
+  .mision-gallery{
+    display: grid; 
+    grid-template-columns: repeat(2, 300px); 
+    margin: 5% 5%;
+  } 
+
+  .about-img{
+    width: 100%; 
+    height: 100vh; 
+    margin: 0; 
+    overflow: hidden; 
+
+  }
+  
+  .about-description{
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%); 
+    z-index: 20;
+  }  
+
+  .about-description h2{
+    font-size: 2rem;
+  } 
+
+  .about-description p{
+    font-size: 1.2rem;
+  }
+
+  #about-me{
+    position: relative;  
+    margin: 0; 
+
+  }
+
+  @media(max-width:960px){
+    .container{
+      padding-right:3rem;
+      padding-left:3rem;
+    }
+  }
