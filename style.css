@@ -235,6 +235,10 @@
     position: relative;  
     margin: 0; 
 
+  } 
+
+  .section-c{
+    background: #515c5b;
   }
 
   @media(max-width:960px){
